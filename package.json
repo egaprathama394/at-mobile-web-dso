@@ -1,0 +1,36 @@
+{
+  "name": "at-mobile-web-dso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cucumber.conf.js",
+  "scripts": {
+    "e2e-test": "mkdirp report && cucumber-js --retry 2 --require-module babel-core/register --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json",
+    "report-chrome": "node create-html-report-chrome.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "astraazure@vs-ssh.visualstudio.com:v3/astraazure/Astra%20Seva%20Hybris/at-mobile-web-dso"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.1.0",
+    "cucumber-pretty": "^6.0.0",
+    "chromedriver": "^80.0.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "mkdirp": "^1.0.3",
+    "multiple-cucumber-html-reporter": "^1.14.0",
+    "nightwatch": "1.3.4",
+    "nightwatch-api": "3.0.1",
+    "randomstring": "^1.1.5",
+    "selenium-server": "^3.141.59"
+  }
+}

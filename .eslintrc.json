@@ -1,0 +1,10 @@
+{
+ "extends": "airbnb-base",
+ "root": true,
+ "rules": {
+    "max-len": "off",
+    "no-param-reassign": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-undef": "off"
+  }
+}
